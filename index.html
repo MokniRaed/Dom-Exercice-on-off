@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <img id="image" width="200px" src="off.png" alt="" />
+      <button id="switch" onclick="change()">switch</button>
+    </div>
+    <script>
+      function change() {
+         var image = document.getElementById("image");
+
+        if (image.src == "http://127.0.0.1:5501/off.png" ) {
+          document.getElementById("image").src = "on.png";
+        } else {
+          document.getElementById("image").src = "off.png";
+        }
+      }
+
+    </script>
+  </body>
+</html>
